@@ -28,6 +28,7 @@ pipeline {
     stage("After") {
         node {
             echo "after"
+            
         }
     }
 }
