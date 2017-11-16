@@ -23,8 +23,10 @@ pipeline {
         for(int j=0; j< axisLanguage.size(); j++) {
             def axisLanguageValue = axisLanguage[j]
             tasks["${axisBrowserValue}/${axisLanguageValue}"] = {
+                 steps {
                     println "Browser=${axisBrowserValue}"
                     println "Language=${axisLanguageValue}"
+                 }
             }
         }
     }
