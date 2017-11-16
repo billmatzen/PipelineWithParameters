@@ -1,8 +1,8 @@
-def axisBrowser = ["chrome","firefox"]
-def axisLanguage = ["en-US","fr-FR"]
-def tasks = [:]
-
 pipeline {
+
+    def axisBrowser = ["chrome","firefox"]
+    def axisLanguage = ["en-US","fr-FR"]
+    def tasks = [:]
 
     stage("Before") {
         node {
