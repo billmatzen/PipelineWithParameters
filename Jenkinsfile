@@ -25,7 +25,7 @@ pipeline {
         parallel tasks
     }
 
-    stage("After") {
+    stage("After ") {
         node {
             echo "after"
             
