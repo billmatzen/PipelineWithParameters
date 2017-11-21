@@ -1,6 +1,8 @@
 pipeline {
   stages {
   
+    agent any 
+    
     stage("Before") {
         steps {
             echo "before"
